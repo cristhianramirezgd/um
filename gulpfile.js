@@ -15,7 +15,7 @@ gulp.task('sass', function() {
   return gulp.src('scss/*.scss')
     .pipe(gp_sourcemaps.init())
     .pipe($.sass({
-      outputStyle: 'compact' // if css compressed **file size** options: nested, expanded, compact, compressed.
+      outputStyle: 'compressed' // if css compressed **file size** options: nested, expanded, compact, compressed.
     })
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({
