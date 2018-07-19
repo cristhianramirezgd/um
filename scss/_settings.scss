@@ -1,0 +1,20 @@
+// Settings
+$color-background: #f3f4f6;
+$white:	#fff;
+$black: #000;
+$dark: #333;
+$gray-light:#ededed;
+$warning:#FACB22;
+$primary: #4A200B;
+$blue: #01aaf4;
+// utilities text
+$font-um: "Nunito", sans-serif;
+// utilities margins, padding, anchor, containers
+$gutter:15px;
+$global-margin: $gutter;
+$global-padding: $gutter;
+$global-width:	1300px;
+$global-anchor:	100%;
+$global-radius: $gutter/5;
+
+$global-shadow: $global-radius $global-radius $global-radius rgba($dark ,.2);
