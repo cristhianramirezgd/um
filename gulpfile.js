@@ -21,7 +21,7 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
-    // .pipe(minifyCSS())
+    .pipe(minifyCSS())
     .pipe(gp_concat('app.min.css'))
     .pipe(gp_sourcemaps.write('./'))
     .pipe(gulp.dest('css'));
