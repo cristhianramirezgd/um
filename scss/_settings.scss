@@ -1,21 +1,34 @@
-// Settings
-$color-background: #f3f4f6;
+// Settings.
+// -Color.
+// -Text.
+// -Margins, paddings, Anchor, Container.
+// -Shadow
+// -Animations
+
+// ---------------------- //
+// Color.
+$background-global: #f3f4f6;
 $white:	#fff;
 $black: #000;
 $dark: #333;
-$gray-light:#ededed;
-$warning:#FACB22;
-$primary: #4A200B;
-$blue: #01aaf4;
-// utilities text
-$font-um: "Nunito", sans-serif;
+$gray-light:#F3F4F6;
+$gray-dark:#707070;
+$orange:#FC9100;
+$red: #FF5722;
+$green: #8BC34A;
+$bluegreen: #35BCA2;
+// Utilities text.
+$global-font: "lato", sans-serif;
 $font-title-bold: 'Rubik', sans-serif;
-// utilities margins, padding, anchor, containers
-$gutter:15px;
+// Utilities margins, padding, anchor, containers.
+$gutter:16px;
 $global-margin: $gutter;
 $global-padding: $gutter;
-$global-width:	1300px;
+$global-width:	1366px;
 $global-anchor:	100%;
 $global-radius: $gutter/5;
-
+// Shadows.
 $global-shadow: $global-radius $global-radius $global-radius rgba($dark ,.2);
+// Animations.
+$global-transition: all 460ms ease-in;
+$global-subtransition: all 300ms ease-out;
