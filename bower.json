@@ -1,0 +1,21 @@
+{
+  "name": "universomascotas",
+  "description": "Basic template for a new universomascotas for Sites project.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Cristhian Ramirez <cristhianramirezgd@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
