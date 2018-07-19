@@ -40,7 +40,7 @@ gulp.task('babel-js', () =>
 gulp.task('image-optimization', () =>
   gulp.src('assets/*.*')
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/dist/'))
+    .pipe(gulp.dest('images/'))
 );
 
 gulp.task('default', ['sass'], function() {
