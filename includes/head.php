@@ -30,7 +30,7 @@
     <meta property="og:title" content="universomascotas.co" />
     <meta property="og:url" content="https://www.universomascotas.co" />
     <meta property="og:description" content="Conoce todos los cuidados para gatos y perros, consejos sobre nutrición y salud, datos curiosos sobre tu mascota. Conoce más información aquí." />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="/images/universomascotas-logo-lughtgray-v2.png" />
     <meta property="og:locale" content="es_ES" />
     
     <!-- Prerendering and Prefetching. -->
@@ -53,4 +53,4 @@
     <!-- Google fonts -->
     <!-- fonts google -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:900" rel="stylesheet">
