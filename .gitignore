@@ -5,4 +5,5 @@ npm-debug.log
 css
 template.php
 js/dist/app.js
+assets/*.*
 images/*.*
