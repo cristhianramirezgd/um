@@ -4,8 +4,12 @@
 // -Margins, paddings, Anchor, Container.
 // -Shadow
 // -Animations
+// -Border
 
 // ---------------------- //
+*{
+	box-sizing:border-box;
+}
 // Color.
 $background-global: #f3f4f6;
 $white:	#fff;
@@ -32,3 +36,5 @@ $global-shadow: $global-radius $global-radius $global-radius rgba($dark ,.2);
 // Animations.
 $global-transition: all 460ms ease-in;
 $global-subtransition: all 300ms ease-out;
+// Border
+$global-border-width:	1px;
