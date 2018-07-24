@@ -1,0 +1,30 @@
+.background-color{
+	&-background-global{@include background-color($background-global);}
+	&-white{@include background-color($white);}
+	&-black{@include background-color($black);}
+	&-dark{@include background-color($dark);}
+	&-gray-light{@include background-color($gray-light);}
+	&-gray-dark{@include background-color($gray-dark);}
+	&-orange{@include background-color($orange);}
+	&-red{@include background-color($red);}
+	&-green{@include background-color($green);}
+	&-bluegreen{@include background-color($bluegreen);}
+}
+.text-color{
+	&-background-global{@include text-color($background-global);}
+	&-white{@include text-color($white);}
+	&-black{@include text-color($black);}
+	&-dark{@include text-color($dark);}
+	&-gray-light{@include text-color($gray-light);}
+	&-gray-dark{@include text-color($gray-dark);}
+	&-orange{@include text-color($orange);}
+	&-red{@include text-color($red);}
+	&-green{@include text-color($green);}
+	&-bluegreen{@include text-color($bluegreen);}
+}
+.border{
+	&-top{@include default-border-color(top);}
+	&-right{@include default-border-color(right);}
+	&-bottom{@include default-border-color(bottom);}
+	&-left{@include default-border-color(left);}
+}

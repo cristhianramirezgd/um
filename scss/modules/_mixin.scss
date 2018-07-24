@@ -1,0 +1,23 @@
+@mixin background-color($color){
+	background: $color;
+}
+@mixin text-color($color){
+	color: $color;
+}
+@mixin default-border($color,$site){
+	border-#{($site)}: $global-border-width solid $color;
+}
+@mixin default-border-color($site){
+	&-color{
+		&-background-global{@include default-border($background-global,$site);}
+		&-white{@include default-border($white,$site);}
+		&-black{@include default-border($black,$site);}
+		&-dark{@include default-border($dark,$site);}
+		&-gray-light{@include default-border($gray-light,$site);}
+		&-gray-dark{@include default-border($gray-dark,$site);}
+		&-orange{@include default-border($orange,$site);}
+		&-red{@include default-border($red,$site);}
+		&-green{@include default-border($green,$site);}
+		&-bluegreen{@include default-border($bluegreen,$site);}
+	}
+}
