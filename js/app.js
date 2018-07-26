@@ -1,3 +1,4 @@
+// megamenu
 $('.icon-menu-bars').on('click mouseover mouseout', function () {
     $(this).find('.megamenu').toggleClass('active-f');
 });
