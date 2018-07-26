@@ -1,6 +1,9 @@
-.container{
+.container-um{
 	max-width: $global-width;
 	margin-left: auto;
 	margin-right: auto;
 	padding:$global-padding/5 $global-padding;
+	@include mq(desktop) {
+		width:$global-anchor*.95;
+	}
 }
