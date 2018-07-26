@@ -28,3 +28,57 @@
 	&-bottom{@include default-border-color(bottom);}
 	&-left{@include default-border-color(left);}
 }
+.btn-um{
+	border-radius: $global-radius;
+	padding:$global-padding/3 $global-padding;
+	border:0;
+	cursor:pointer;
+	&:hover{
+		opacity: .8;
+	}
+	&-background-global{@include background-color($background-global);}
+	&-white{@include background-color($white);}
+	&-black{
+		@include background-color($black);
+		color:$white;
+		}
+	&-dark{
+		@include background-color($dark);
+		color:$white;
+		}
+	&-gray-light{@include background-color($gray-light);}
+	&-gray-dark{
+		@include background-color($gray-dark);
+		color:$white;
+		}
+	&-orange{@include background-color($orange);}
+	&-red{
+		@include background-color($red)
+	;}
+	&-green{@include background-color($green);}
+	&-bluegreen{@include background-color($bluegreen);}
+	color:$white;
+		}
+.list-inline-um{
+		list-style: none;
+		display: flex;
+	}
+.margin-none-um{
+	margin:0;
+}
+.padding-none-um{
+	padding:0;
+}
+.mobile-none{
+	display:none;
+}
+.desktop-none{
+	@include mq (desktop) {
+		display:none;
+	}
+}
+.desktop-up{
+	@include mq (desktop) {
+		display:block;
+	}
+}

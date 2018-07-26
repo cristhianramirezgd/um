@@ -1,0 +1,71 @@
+.search{
+	display: flex;
+	align-items: center;
+}
+%padding-input{
+	padding: $global-padding/3 $global-padding $global-padding/3 $global-padding/3;
+	font-size: 1rem;
+}
+.search-um{
+	margin-left: auto;
+	margin-right: auto;
+	width: $global-anchor;
+	display:flex;
+	justify-content: center;
+	min-width: 90vw;
+	@include mq(desktop) {
+		min-width: 40vw;
+	}
+	&:hover{
+		>input{
+			border-color:rgba($red,.7);
+			 @extend %padding-input;
+		}
+	}
+	>input{
+		font-size: .7rem;
+		padding:$global-padding/3 $global-padding/5;
+		color:$gray-dark;
+		background:$white;
+		border:2px solid $red;
+		margin:0;
+		transition:$global-subtransition;
+		width: 100%;
+		border-top-left-radius: $global-radius;
+		border-bottom-left-radius: $global-radius;
+		&:focus{
+			color:$dark;
+			outline-color: $red;
+			 @extend %padding-input;
+		}
+	}
+	>span{
+		display: flex;
+		align-items: center;
+		padding:$global-padding/5 0!important;
+		i{
+			text-align: center;
+			position:relative;
+			left:$global-padding;
+			@include mq(desktop) {
+				display:none;
+			}
+		}
+		input[value="Buscar"]{
+			    font-size: 0;
+			    width: 20px;
+			    padding: $global-padding;
+			    @include mq(desktop) {
+			    	padding:0 $global-padding*2;
+			    	width:auto;
+			    	font-size: inherit;
+			    }
+			}
+	}
+	.btn-um{
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		padding-left:$global-padding*3;
+		padding-right:$global-padding*3;
+	}
+}

@@ -3,9 +3,9 @@
 		<div class="container-um top-wrapper">
 			<div class="top-containers">
 				<ul class="list-inline-um seals-value">
-					<li class="seal"><a href=""><i class="fas fa-shipping-fast"></i> Envío a tu domicilio</a></li>
-					<li class="seal"><a href=""><i class="fas fa-certificate"></i> Aprovecha</a></li>
-					<li class="seal"><a href=""><i class="fas fa-truck"></i> Devoluciones grátis</a></li>
+					<li class="seal" data-balloon="😀 Recibe en la comodidad de tu casa tu pedido." data-balloon-length="medium" data-balloon-pos="down"><a href=""><i class="fas fa-shipping-fast"></i> Envío a tu domicilio</a></li>
+					<li class="seal" data-balloon="😀 Compra y paga online fácil, rápido y seguro." data-balloon-length="medium" data-balloon-pos="down"><a href=""><i class="fas fa-certificate"></i> Aprovecha</a></li>
+					<li class="seal" data-balloon="😀 No te preocupes si quieres hacer una devolución." data-balloon-length="medium" data-balloon-pos="down"><a href=""><i class="fas fa-truck"></i> Devoluciones grátis</a></li>
 				</ul>
 			</div>
 			<div class="top-containers">
@@ -22,6 +22,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- /topbar -->
 	<script>
 	function modificarString()
 	    {
@@ -33,38 +34,85 @@
 	    }
 	</script>
 	<div class="container-search">
-		<div class="logo-um"><a href="/" title="universomascotas.co"><img src="/images/universo-mascotas-logo-v2.svg" alt="logo universomascotas.co"></a></div>
+		<div class="logo-um">
+			<a href="/" title="universomascotas.co">
+				<img class="desktop-none" src="/images/logotipo-universomascotas-responsive.svg" alt="logo universomascotas.co">
+				<img class="mobile-none desktop-up" src="/images/universo-mascotas-logo-v2.svg" alt="logo universomascotas.co">
+			</a>
+		</div>
 		<div class="search">
 			<form class="search-um" action="/buscador/" method="GET" onclick="return modificarString()">
-			   		<input type="search" name="q" placeholder="Encuentra un universo de productos y servicios para tu mascota">
-					<input class="btn-um btn-um-red" type="submit" value="Buscar">
+			   		<input type="search" name="q" placeholder="Encuentra un universo de productos y servicios para tu mascota ...">
+					<span class="btn-um btn-um-red"><i class="fas fa-search"></i><input class="btn-um btn-um-red" type="submit" value="Buscar"></span>
 			</form>
 		</div>
-		<div class="checkout-nav"></div>
+		<div class="checkout-nav-um">
+			<p>espacio para el checkout</p>
+		</div>
 	</div>
-	<nav class="menu">
-		<div class="link-menu">
-			<a href="">Categoría</a>
-			<div class="megamenu">
-				<div class="nav-department">Para perros</div>
-				<div class="nav-department">Para Gatos</div>
-				<div class="nav-department">Comunidad</div>
-				<div class="nav-category">
-					<ul>
-						<li><a href="">title</a></li>
-						<li><a href="">link-2</a></li>
-						<li><a href="">link-3</a></li>
-						<li><a href="">link-4</a></li>
-						<li><a href="">link-5</a></li>
-						<li><a href="">link-6</a></li>
-					</ul>
+	<nav class="menu container-full-um border-top-color-gray-light border-bottom-color-gray-light">
+		<div class="nav-wrapper">
+			<div class="link-menu">
+				<div class="icon-menu-bars"><i class="fas fa-bars"></i>
+					<div class="megamenu">
+						<div class="button-category-um">
+							<div class="nav-department">
+								<div class="nav-department-item">
+									<a href="">Para perros</a>
+									<i class="fas fa-angle-right"></i>
+								</div>
+								<div class="nav-category">
+									<ul>
+										<li><a href="">perros</a></li>
+										<li><a href="">link-2</a></li>
+										<li><a href="">link-3</a></li>
+										<li><a href="">link-4</a></li>
+										<li><a href="">link-5</a></li>
+										<li><a href="">link-6</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="nav-department">
+								<div class="nav-department-item">
+									<a href="">Para gatos</a>
+									<i class="fas fa-angle-right"></i>
+								</div>
+								<div class="nav-category">
+									<ul>
+										<li><a href="">gatos</a></li>
+										<li><a href="">link-2</a></li>
+										<li><a href="">link-3</a></li>
+										<li><a href="">link-4</a></li>
+										<li><a href="">link-5</a></li>
+										<li><a href="">link-6</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="nav-department">
+								<div class="nav-department-item">
+									<a href="">Comunidad</a>
+									<i class="fas fa-angle-right"></i>
+								</div>
+								<div class="nav-category">
+									<ul>
+										<li><a href="">comunidad</a></li>
+										<li><a href="">link-2</a></li>
+										<li><a href="">link-3</a></li>
+										<li><a href="">link-4</a></li>
+										<li><a href="">link-5</a></li>
+										<li><a href="">link-6</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+			<div class="link-menu"><a href="">Para Perros</a></div>
+			<div class="link-menu"><a href="">Para Gatos</a></div>
+			<div class="link-menu"><a href="">Marcas</a></div>
+			<div class="link-menu"><a href="">Sale</a></div>
+			<div class="link-menu"><a href="">Comunidad</a></div>
 		</div>
-		<div class="link-menu"><a href=""></a>Para Perros</div>
-		<div class="link-menu"><a href=""></a>Para Gatos</div>
-		<div class="link-menu"><a href=""></a>Marcas</div>
-		<div class="link-menu"><a href=""></a>Sale</div>
-		<div class="link-menu"><a href=""></a>Comunidad</div>
 	</nav>
 </header>
