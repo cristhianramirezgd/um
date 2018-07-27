@@ -136,6 +136,21 @@
 	}
 	
 }
+%hover-nav{
+	transition:$global-subtransition;
+	display: flex!important;
+	flex: 1 100%;
+	flex-flow: row wrap;
+	height: 100%;
+	transition: all .3s ease-out;
+	position: absolute;
+	width: calc(100% - 120px);
+	background: $white;
+	color:$gray-dark;
+	left: 120px;
+	top: 0;
+	z-index: 1;
+}
 .nav-department{
 	display:flex;
 	&-item{
@@ -145,6 +160,7 @@
 		border-bottom:1px solid $white;
 		>i{
 			margin-left:$global-margin/3;
+			font-weight: 600;
 		}
 		@include mq(desktop) {
 			width:120px;
@@ -158,22 +174,74 @@
 			}
 		}
 	}
-}
-%hover-nav{
-	display: flex!important;
-	height: 100%;
-	transition: all .3s ease-out;
-	position: absolute;
-	width: calc(100% - 120px);
-	background: $white;
-	left: 120px;
-	top: 0;
-	z-index: 1;
+	&:first-child{
+		.nav-category{
+			@extend %hover-nav;
+		}
+	}
 }
 .nav-category{
 	display:none;
 	&:hover{
 		@extend %hover-nav;
+	}
+}
+.nav-category-items{
+	display: flex;
+	justify-content: space-around;
+	font-size: .9rem;
+	.title-category-menu-um{
+		padding:0 $global-padding;
+		a:hover{color:$orange;}
+		font-weight: 600;
+		background: $white;
+		margin: $global-margin 0 0 0;
+	}
+}
+.item-nav-um{
+	display: flex;
+	flex: 1 100%;
+	flex-flow: column;
+	ul{
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 0 $global-padding;
+		width: 100%;
+		min-height: 261px;
+		    margin-bottom: 0;
+		li{
+			padding:$global-padding/3;
+			transition:$global-subtransition;
+			max-width: 150px;
+			font-weight: 400;
+			&:hover{
+				background: $background-global;
+			}
+			a{
+				&:hover{
+					color:$dark;
+				}
+			}
+		}
+	}
+}
+.all-buttons{
+	display: flex;
+	flex: 3 100%;
+	align-self: center;
+	width: 100%;
+	padding:0 $global-padding;
+	align-items: center;
+	text-align: center;
+	border-top: $global-border-width solid $gray-light;
+	a{
+		font-weight: 600;
+		padding: $global-padding/3;
+		&:hover{
+			color:$red;
+		}
 	}
 }
 .nav-department-item{
@@ -182,4 +250,17 @@
 			@extend %hover-nav;
 		}
 	}
+}
+
+.nav-category-items   { 
+	order: 1; 
+	flex: 2 70%;
+	border-right:$global-border-width solid $gray-light;
+}
+.nav-category-galery { 
+	order: 2;
+	flex: 2 30%;
+	align-self: center;
+	justify-self: center;
+	padding: $global-padding;
 }

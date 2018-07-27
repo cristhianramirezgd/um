@@ -50,11 +50,11 @@
 			<p>espacio para el checkout</p>
 		</div>
 	</div>
-	<nav class="menu container-full-um border-top-color-gray-light border-bottom-color-gray-light">
+	<nav class="menu-um container-full-um border-top-color-gray-light border-bottom-color-gray-light">
 		<div class="nav-wrapper">
 			<div class="link-menu">
 				<div class="icon-menu-bars"><i class="fas fa-bars"></i>
-					<div class="megamenu">
+					<div class="megamenu"> <!-- active-f -->
 						<div class="button-category-um">
 							<div class="nav-department">
 								<div class="nav-department-item">
@@ -62,14 +62,46 @@
 									<i class="fas fa-angle-right"></i>
 								</div>
 								<div class="nav-category">
-									<ul>
-										<li><a href="">perros</a></li>
-										<li><a href="">link-2</a></li>
-										<li><a href="">link-3</a></li>
-										<li><a href="">link-4</a></li>
-										<li><a href="">link-5</a></li>
-										<li><a href="">link-6</a></li>
-									</ul>
+									<div class="nav-category-items">
+										<div class="item-nav-um">
+											<h4 class="title-category-menu-um"><a class="category-nav-title text-color-red" href="">Productos para perros</a></h4>
+											<ul>
+												<li><a href="">Alimento</a></li>
+												<li><a href="">Snack’s</a></li>
+												<li><a href="">Nutriceuticos & Suplementos</a></li>
+												<li><a href="">Accesorios</a></li>
+												<li><a href="">Antipulgas & Antiparasitários</a></li>
+												<li><a href="">Ropa</a></li>
+												<li><a href="">Estética</a></li>
+												<li><a href="">Camas</a></li>
+												<li><a href="">Casas</a></li>
+												<li><a href="">Adiestramiento</a></li>
+												<li><a href="">Trasporte</a></li>
+												<li><a href="">Otros</a></li>
+											</ul>
+											<div class="all-buttons">
+												<a href="">Ver todos los productos <i class="fas fa-angle-right"></i></a>
+											</div>
+										</div>
+										<div class="item-nav-um">
+												<h4 class="title-category-menu-um"><a class="category-nav-title text-color-red" href="">Servicios para perros</a></h4>
+											<ul>
+												<li><a href="">Consulta general</a></li>
+												<li><a href="">Peluquería</a></li>
+												<li><a href="">Vacunación</a></li>
+												<li><a href="">Toma de muestras</a></li>
+												<li><a href="">Profilaxis</a></li>
+												<li><a href="">Chip de Identificación</a></li>
+												<li><a href="">Guardería</a></li>
+											</ul>
+											<div class="all-buttons">
+												<a href="">Ver todos los Servicios <i class="fas fa-angle-right"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="nav-category-galery">
+										<a href=""><img src="https://fakeimg.pl/300/"></a>
+									</div>
 								</div>
 							</div>
 							<div class="nav-department">
@@ -78,14 +110,46 @@
 									<i class="fas fa-angle-right"></i>
 								</div>
 								<div class="nav-category">
-									<ul>
-										<li><a href="">gatos</a></li>
-										<li><a href="">link-2</a></li>
-										<li><a href="">link-3</a></li>
-										<li><a href="">link-4</a></li>
-										<li><a href="">link-5</a></li>
-										<li><a href="">link-6</a></li>
-									</ul>
+									<div class="nav-category-items">
+										<div class="item-nav-um">
+											<h4 class="title-category-menu-um"><a class="category-nav-title text-color-red" href="">Productos para gatos</a></h4>
+											<ul>
+												<li><a href="">Alimento</a></li>
+												<li><a href="">Snack’s</a></li>
+												<li><a href="">Nutriceuticos & Suplementos</a></li>
+												<li><a href="">Accesorios</a></li>
+												<li><a href="">Antipulgas & Antiparasitários</a></li>
+												<li><a href="">Ropa</a></li>
+												<li><a href="">Estética</a></li>
+												<li><a href="">Camas</a></li>
+												<li><a href="">Casas</a></li>
+												<li><a href="">Adiestramiento</a></li>
+												<li><a href="">Trasporte</a></li>
+												<li><a href="">Otros</a></li>
+											</ul>
+											<div class="all-buttons">
+												<a href="">Ver todos los productos <i class="fas fa-angle-right"></i></a>
+											</div>
+										</div>
+										<div class="item-nav-um">
+												<h4 class="title-category-menu-um"><a class="category-nav-title text-color-red" href="">Servicios para gatos</a></h4>
+											<ul>
+												<li><a href="">Consulta general</a></li>
+												<li><a href="">Peluquería</a></li>
+												<li><a href="">Vacunación</a></li>
+												<li><a href="">Toma de muestras</a></li>
+												<li><a href="">Profilaxis</a></li>
+												<li><a href="">Chip de Identificación</a></li>
+												<li><a href="">Guardería</a></li>
+											</ul>
+											<div class="all-buttons">
+												<a href="">Ver todos los Servicios <i class="fas fa-angle-right"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="nav-category-galery">
+										<a href=""><img src="https://fakeimg.pl/300/"></a>
+									</div>
 								</div>
 							</div>
 							<div class="nav-department">
@@ -94,14 +158,69 @@
 									<i class="fas fa-angle-right"></i>
 								</div>
 								<div class="nav-category">
-									<ul>
-										<li><a href="">comunidad</a></li>
-										<li><a href="">link-2</a></li>
-										<li><a href="">link-3</a></li>
-										<li><a href="">link-4</a></li>
-										<li><a href="">link-5</a></li>
-										<li><a href="">link-6</a></li>
-									</ul>
+									<div class="nav-category-items">
+										<div class="item-nav-um">
+											<h4 class="title-category-menu-um"><a class="category-nav-title text-color-red" href="">Bienestar</a></h4>
+											<ul>
+												<li><a href="">Alimento</a></li>
+												<li><a href="">Snack’s</a></li>
+												<li><a href="">Nutriceuticos & Suplementos</a></li>
+												<li><a href="">Accesorios</a></li>
+												<li><a href="">Antipulgas & Antiparasitários</a></li>
+												<li><a href="">Ropa</a></li>
+												<li><a href="">Estética</a></li>
+												<li><a href="">Camas</a></li>
+											</ul>
+											<div class="all-buttons">
+												<a href="">Ver todo bienestar <i class="fas fa-angle-right"></i></a>
+											</div>
+										</div>
+										<div class="item-nav-um">
+												<h4 class="title-category-menu-um"><a class="category-nav-title text-color-red" href="">Clasificados</a></h4>
+											<ul>
+												<li><a href="">Consulta general</a></li>
+												<li><a href="">Peluquería</a></li>
+												<li><a href="">Vacunación</a></li>
+												<li><a href="">Toma de muestras</a></li>
+												<li><a href="">Profilaxis</a></li>
+												<li><a href="">Chip de Identificación</a></li>
+												<li><a href="">Guardería</a></li>
+											</ul>
+											<div class="all-buttons">
+												<a href="">Ver todos los Clasificados <i class="fas fa-angle-right"></i></a>
+											</div>
+										</div>
+										<div class="item-nav-um">
+												<h4 class="title-category-menu-um"><a class="category-nav-title text-color-red" href="">Experto</a></h4>
+											<ul>
+												<li><a href="">Consulta general</a></li>
+												<li><a href="">Peluquería</a></li>
+												<li><a href="">Vacunación</a></li>
+												<li><a href="">Toma de muestras</a></li>
+												<li><a href="">Profilaxis</a></li>
+												<li><a href="">Chip de Identificación</a></li>
+												<li><a href="">Guardería</a></li>
+											</ul>
+											<div class="all-buttons">
+												<a href="">Ver todos <i class="fas fa-angle-right"></i></a>
+											</div>
+										</div>
+										<div class="item-nav-um">
+												<h4 class="title-category-menu-um"><a class="category-nav-title text-color-red" href="">Eventos</a></h4>
+											<ul>
+												<li><a href="">Consulta general</a></li>
+												<li><a href="">Peluquería</a></li>
+												<li><a href="">Vacunación</a></li>
+												<li><a href="">Toma de muestras</a></li>
+												<li><a href="">Profilaxis</a></li>
+												<li><a href="">Chip de Identificación</a></li>
+												<li><a href="">Guardería</a></li>
+											</ul>
+											<div class="all-buttons">
+												<a href="">Ver todos los eventos<i class="fas fa-angle-right"></i></a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
