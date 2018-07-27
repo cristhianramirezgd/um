@@ -88,18 +88,7 @@
 			}
 		}
 	}
-.nav-category{
-	display: none;
-	transition:$global-subtransition;
-	position: absolute;
-	width:calc(#{$global-anchor} - 120px);
-	background: green;
-	left: 120px;
-	top: 0;
-	z-index: 1;
-	// background: $white;
-	}
-	.menu{
+	.menu-um{
 		.nav-wrapper{
 			@include mq() {
 				display:flex;
@@ -113,55 +102,84 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
-			.icon-menu-bars{
-				background:$red;
-				color:$white;
-				padding:7px 10px;
-				cursor:pointer;
-				
-			}
-			.megamenu{
-				@include mq(desktop) {
-					display: none;
-					position: absolute;
-					width: 100%;
-					left:0;
-					top:100%;
-					background: $white;
-					color:$dark;
-					box-shadow:$global-shadow;
-					font-weight: 400;
-					z-index:9;
-				}
-				.button-category-um{
-					position: relative;
-					.nav-department{
-						display:flex;
-						&-item{
-							background: $red;
-							transition:$global-subtransition;
-							color:$white;
-							border-bottom:1px solid $white;
-							>i{
-								margin-left:$global-margin/3;
-							}
-							@include mq(desktop) {
-								width:120px;
-								height:120px;
-								display: flex;
-								align-items: center;
-								justify-content: center;
-								&:hover{
-									background:$orange;
-								}
-							}
-						}
-					}
-				}
+			
+		}
+	}
+}
+.megamenu{
+	@include mq(desktop) {
+		display: none;
+		position: absolute;
+		width: 100%;
+		left:0;
+		top:100%;
+		background: $white;
+		color:$dark;
+		box-shadow:$global-shadow;
+		font-weight: 400;
+		z-index:9;
+	}
+	.button-category-um{
+		position: relative;
+		width: 100%;
+	}
+}
+.icon-menu-bars{
+	background:$red;
+	color:$white;
+	padding:7px 10px;
+	cursor:pointer;
+	&:hover{
+		.megamenu{
+			display:flex;
+		}
+	}
+	
+}
+.nav-department{
+	display:flex;
+	&-item{
+		background: $red;
+		transition:$global-subtransition;
+		color:$white;
+		border-bottom:1px solid $white;
+		>i{
+			margin-left:$global-margin/3;
+		}
+		@include mq(desktop) {
+			width:120px;
+			height:120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition:$global-transition;
+			&:hover{
+				background:$orange;
 			}
 		}
 	}
 }
-.active-f{
+%hover-nav{
 	display: flex!important;
+	height: 100%;
+	transition: all .3s ease-out;
+	position: absolute;
+	width: calc(100% - 120px);
+	background: $white;
+	left: 120px;
+	top: 0;
+	z-index: 1;
+}
+.nav-category{
+	display:none;
+	&:hover{
+		@extend %hover-nav;
+	}
+}
+.nav-department-item{
+	&:hover{
+		& + .nav-category{
+			@extend %hover-nav;
+		}
+	}
 }
