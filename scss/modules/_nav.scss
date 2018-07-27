@@ -106,6 +106,26 @@
 		}
 	}
 }
+.link-menu {
+    padding: 5px 0;
+    position:relative;
+    &:after{
+    	transition: $global-subtransition;
+    	content:'';
+    	width: $global-anchor;
+    	bottom: -($global-padding);
+    	position:absolute;
+		border-bottom: 3px solid $orange;
+		display: block;
+		opacity:0;
+    }
+    &:hover{
+		&:after{
+			opacity:1;
+			bottom: 3px;
+		}
+    }
+}
 .megamenu{
 	@include mq(desktop) {
 		display: none;

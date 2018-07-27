@@ -52,7 +52,7 @@
 	</div>
 	<nav class="menu-um container-full-um border-top-color-gray-light border-bottom-color-gray-light">
 		<div class="nav-wrapper">
-			<div class="link-menu">
+			<div class="link-navbar-megamenu">
 				<div class="icon-menu-bars"><i class="fas fa-bars"></i>
 					<div class="megamenu"> <!-- active-f -->
 						<div class="button-category-um">
