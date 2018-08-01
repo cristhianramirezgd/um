@@ -1,6 +1,29 @@
-body{
-	background:$white;
+// body{
+// 	background:$white;
+// 	@include mq(desktop) {
+// 	        background: $background-global;
+// 	    }
+// }
+li.topBar-item.m-inlineBlock {
+    margin: 0;
+}
+.cart-cont {
+    position: absolute;
+    z-index: 9999999;
+    left: -100%;
+    &:hover{
+		.cart-int{
+			display: block;
+		}
+    }
+    .cart-int {
+        max-width: auto!important;
+        z-index: 1;
+    }
+}
+.checkout-nav-um:hover .cart-cont{
 	@include mq(desktop) {
-	        background: $background-global;
-	    }
+    	display: block!important;
+    	max-width: initial;
+	}
 }
