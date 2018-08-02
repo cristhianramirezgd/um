@@ -9,11 +9,13 @@
 .search-um{
 	margin-left: auto;
 	margin-right: auto;
-	width: $global-anchor;
 	display:flex;
 	justify-content: center;
-	min-width: 90vw;
+	min-width: 70vw;
+	margin-right: $global-margin;
 	@include mq(desktop) {
+		margin-right: 0;
+		width: $global-anchor;
 		min-width: 40vw;
 	}
 	&:hover{

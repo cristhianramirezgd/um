@@ -1,6 +1,11 @@
 // megamenu navigation
 .header{
 	background:$white;
+	position: relative;
+	display: flex;
+	@include mq(desktop) {
+		display:block;
+	}
 	.topbar{
 		display:none;
 		font-size: .8rem;
@@ -52,13 +57,15 @@
 		}
 	}
 	.container-search{
-		width:$global-anchor*.95;
+		display: flex;
+		margin-top: 48px;
 		max-width: $global-width;
 		align-items: center;
 		margin-left: auto;
 		margin-right: auto;
 		@include mq(desktop) {
-			display: flex;
+			margin-top:0;
+			width:$global-anchor*.95;
 			justify-content:space-between;
 		}
 		>div{
@@ -69,6 +76,10 @@
 		}
 		.logo-um{
 			min-width: 154px + $global-padding*2;
+			display: none;
+			@include mq(desktop) {
+				display:block;
+			}
 			a{
 				display:flex;
 				img{
@@ -76,10 +87,13 @@
 					margin-right: auto;
 					margin-top:$global-margin/3;
 					margin-bottom:$global-margin/3;
-					width:$global-anchor;
+					width:$global-anchor*.85;
 					height: 100%;
 					max-height: 50px;
 					max-width: $global-anchor;
+					@include mq(desktop) {
+					 width:$global-anchor;
+					}
 					@include mq(desktop) {
 						max-height: 70px;
 						max-width: 154px;
@@ -96,24 +110,44 @@
 		}
 	}
 	.menu-um{
+		background:$white;
+		 position: absolute;
+		 padding: 0;
+		 border: 0;
+		 @include mq(desktop) {
+		 	position:initial;
+		 	border-top:1px solid $gray-light;
+		 	border-bottom:1px solid $gray-light;
+		 }
 		.nav-wrapper{
-			@include mq() {
+			color:$black;
+			font-weight: 600;
+			position: relative;
+			z-index: 999;
+			max-width: $global-width;
+			margin-left: auto;
+			margin-right: auto;
+			@include mq(desktop) {
+				width: $global-anchor*.80;
 				display:flex;
 				justify-content:space-around;
 				align-items: center;
-				color:$black;
-				font-weight: 600;
-				position: relative;
-				width: $global-anchor*.80;
-				max-width: $global-width;
-				margin-left: auto;
-				margin-right: auto;
 			}
 			
 		}
 	}
 }
+.title-category-menu-um{
+	display: none;
+	@include mq(desktop) {
+		display: block;
+	}
+}
 .link-menu {
+	display:none;
+	@include mq(desktop) {
+		display:block;
+	}
     padding: 5px 0;
     position:relative;
     &:after{
@@ -126,12 +160,14 @@
 		display: block;
 		opacity:0;
     }
-    &:hover{
-		&:after{
-			opacity:1;
-			bottom: 3px;
-		}
-    }
+   @include mq(desktop) {
+   	    &:hover{
+   			&:after{
+   				opacity:1;
+   				bottom: 3px;
+   			}
+   	    }
+   }
 }
 .megamenu{
 	@include mq(desktop) {
@@ -149,45 +185,84 @@
 	.button-category-um{
 		position: relative;
 		width: 100%;
+		background: $white;
 	}
 }
 .icon-menu-bars{
-	background:$red;
-	color:$white;
-	padding:7px 10px;
-	cursor:pointer;
-	&:hover{
-		.megamenu{
-			display:flex;
+	@include mq(desktop) {
+		background:$red;
+		color:$white;
+		padding:7px 10px;
+		cursor:pointer;
+		&:hover{
+			.megamenu{
+				display:flex;
+			}
 		}
 	}
-	
+	.megamenu{
+		display:none;
+	}
+	>i{
+		background: $red;
+		padding:$global-padding;
+		color:$white;
+		position: relative;
+		right: calc(-100% + 46px);
+		&:after{
+			content: '';
+			background: url(https://www.universomascotas.co/media/logotipo-universomascotas-responsive.svg) no-repeat;
+			position: absolute;
+			width: 80vw;
+			max-width: 300px;
+			height: 48px;
+			top: 5px;
+			left: calc(-100vw + 48px);
+			z-index: 9;
+		}
+		@include mq(desktop) {
+			position:initial;
+			padding: 0;
+			background: none;
+			&:after{
+				display: none;
+			}
+		}
+	}
 }
 %hover-nav{
-	transition:$global-subtransition;
-	display: flex!important;
-	flex: 1 100%;
-	flex-flow: row wrap;
-	height: 100%;
-	transition: all .3s ease-out;
-	position: absolute;
-	width: calc(100% - 120px);
-	background: $white;
-	color:$gray-dark;
-	left: 120px;
-	top: 0;
-	z-index: 1;
+	@include mq(desktop) {
+		transition:$global-subtransition;
+		display: flex!important;
+		flex: 1 100%;
+		flex-flow: row wrap;
+		height: 100%;
+		transition: all .3s ease-out;
+		position: absolute;
+		width: calc(100% - 120px);
+		background: $white;
+		color:$gray-dark;
+		left: 120px;
+		top: 0;
+		z-index: 1;
+	}
 }
 .nav-department{
-	display:flex;
+		@include mq(desktop) {
+			display:flex;
+		}
 	&-item{
+		padding:$global-padding;
 		background: $red;
-		transition:$global-subtransition;
 		color:$white;
 		border-bottom:1px solid $white;
+		transition:$global-subtransition;
 		>i{
-			margin-left:$global-margin/3;
-			font-weight: 600;
+			display:none;
+			@include mq(desktop) {
+				margin-left:$global-margin/3;
+				font-weight: 600;
+			}
 		}
 		@include mq(desktop) {
 			width:120px;
@@ -208,27 +283,36 @@
 	}
 }
 .nav-category{
-	display:none;
+		display:none;
 	&:hover{
 		@extend %hover-nav;
 	}
 }
 .nav-category-items{
-	display: flex;
-	justify-content: space-around;
-	font-size: .9rem;
+	@include mq(desktop) {
+		display: flex;
+		justify-content: space-around;
+		font-size: .9rem;
+		border-right:$global-border-width solid $gray-light;
+		order: 1; 
+		flex: 2 70%;
+	}
 	.title-category-menu-um{
-		padding:0 $global-padding;
-		a:hover{color:$orange;}
-		font-weight: 600;
-		background: $white;
-		margin: $global-margin 0 0 0;
+		@include mq(desktop) {
+			padding:0 $global-padding;
+			a:hover{color:$orange;}
+			font-weight: 600;
+			background: $white;
+			margin: $global-margin 0 0 0;
+		}
 	}
 }
 .item-nav-um{
-	display: flex;
-	flex: 1 100%;
-	flex-flow: column;
+	@include mq(desktop) {
+		display: flex;
+		flex: 1 100%;
+		flex-flow: column;
+	}
 	ul{
 		list-style: none;
 		display: flex;
@@ -236,19 +320,42 @@
 		flex-wrap: wrap;
 		padding: 0 $global-padding;
 		width: 100%;
-		min-height: 261px;
-		    margin-bottom: 0;
+		margin-top:0;
+		@include mq(desktop) {
+			margin-bottom: 0;
+			min-height: 261px;
+		}
 		li{
-			padding:$global-padding/3;
 			transition:$global-subtransition;
-			max-width: 150px;
 			font-weight: 400;
+			padding:$global-padding;
+			@include mq(desktop) {
+				padding:$global-padding/3;
+				max-width: 150px;
+			}
 			&:hover{
 				background: $background-global;
 			}
 			a{
 				&:hover{
 					color:$dark;
+				}
+			}
+			&:nth-of-type(4),
+			&:nth-of-type(5),
+			&:nth-of-type(6),
+			&:nth-of-type(7),
+			&:nth-of-type(8),
+			&:nth-of-type(9),
+			&:nth-of-type(10),
+			&:nth-of-type(11),
+			&:nth-of-type(12),
+			&:nth-of-type(13),
+			&:nth-of-type(14),
+			&:nth-of-type(15){
+				display: none;
+				@include mq(desktop) {
+					display: block;
 				}
 			}
 		}
@@ -263,9 +370,13 @@
 	align-items: center;
 	text-align: center;
 	border-top: $global-border-width solid $gray-light;
+	border-bottom: $global-border-width solid $gray-light;
 	a{
 		font-weight: 600;
+		padding: $global-padding;
+		@include mq(desktop) {
 		padding: $global-padding/3;
+		}
 		&:hover{
 			color:$red;
 		}
@@ -278,16 +389,14 @@
 		}
 	}
 }
-
-.nav-category-items   { 
-	order: 1; 
-	flex: 2 70%;
-	border-right:$global-border-width solid $gray-light;
-}
 .nav-category-galery { 
-	order: 2;
-	flex: 2 30%;
-	align-self: center;
-	justify-self: center;
-	padding: $global-padding;
+	display:none;
+	@include mq(desktop) {
+		display:block;
+		order: 2;
+		flex: 2 30%;
+		align-self: center;
+		justify-self: center;
+		padding: $global-padding;
+	}
 }
