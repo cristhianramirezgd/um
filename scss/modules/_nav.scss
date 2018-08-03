@@ -18,6 +18,7 @@
 			@include mq(desktop) {
 				display:flex;
 				justify-content:space-between;
+				position: relative;
 				.top-containers{
 					.seals-value{
 						margin-top: 0;
